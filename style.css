@@ -1,0 +1,132 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.75;
+  color: #333;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: url("dut2.avif") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 95%;
+}
+
+/* Header */
+header {
+  background-color: blue;
+  color: white;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-size: 2.8em;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: normal;
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+
+/* Main Content */
+.content {
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-top: 25px;
+  color: blue;
+  font-weight: 600;
+}
+
+p,
+li {
+  font-size: 1.05em;
+  margin-bottom: 18px;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 30px;
+}
+
+ul li::before {
+  content: "✔️";
+  color: #1a73e8;
+  margin-right: 12px;
+}
+
+ul li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Link Styles */
+a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 1.1em;
+  color: #888;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  header {
+    padding: 30px 20px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.4em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  footer {
+    font-size: 1em;
+  }
+}
